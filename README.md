@@ -10,3 +10,9 @@ Simple temperature graph generator for TEMPER v1.4 USB thermometer. Scripts are 
 
  - rrdtool (for data storage and graph generation)
  - lighttpd (for serving graph on the web)
+
+### Scripts
+ - **create_database.sh** *name* - will create database with given name in *databases* directory.
+ - **create_graph.sh** *name* - will create few graphs for given database name in *graphs* directory.
+ - **cron.sh** *name* - runs *feed_database.sh* and *create_database.sh* for given database name. Is meant to be run from cron obviously.
+ - **feed_database.sh** *name* - will read temperature from the sensor and insert it to given database name.
