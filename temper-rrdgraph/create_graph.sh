@@ -1,7 +1,7 @@
 #!/bin/sh
 
 rrdtool graph /home/marines/repos/micropc/temper-rrdgraph/graphs/$1.png \
--w 785 -h 120 -a PNG \
+-w 458 -h 120 -a PNG \
 --slope-mode \
 --start -604800 --end now \
 --vertical-label "temperature (°C)" \
