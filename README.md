@@ -4,7 +4,11 @@ This repository contains scripts I use on my single-board computers which curren
 
 ## Temper RRD
 
-Simple temperature graph generator for TEMPER v1.4 USB thermometer. Scripts are meant to be executed by cron to gather and generate graph image which is symlinked to lighttpd's web root for now.
+Simple temperature graph generator for TEMPER v1.4 USB thermometer. Scripts are meant to be executed by cron to gather and generate graphs which are symlinked to lighttpd's web root for now. There is also slick (I mean ugly ass) page on Bootstrap with the graphs.
+
+![Temper Stats Preview](http://i.imgur.com/AxOcTxg.png)
+
+The noise on daily temperature graph comes from before fix for inserting null values to database.
 
 ### Packages to install
 
